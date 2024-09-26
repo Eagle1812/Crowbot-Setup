@@ -1,29 +1,29 @@
-const {
-    readdirSync
-} = require('fs');
+const { readdirSync } = require('fs');
 
 const login = (client) => {
-    const Discord = require("discord.js")
+    const Discord = require("discord.js");
     const logs = require('discord-logs');
-    logs(client)
+    logs(client);
     const disbut = require('discord-buttons');
     disbut(client);
     const tempo = require("./gestion/tempo.js");
-    tempo(client)
+    tempo(client);
 
-    client.config = require("../config.json")
+    client.config = require("../config.json");
     client.cooldown = new Array();
-    client.interaction = {}
+    client.interaction = {};
     client.guildInvites = new Map();
     client.queue = new Map();
-    client.commands = new Discord.Collection()
-    client.aliases = new Discord.Collection()
-    client.snipes = new Map()
-    client.inter = new Array()
+    client.commands = new Discord.Collection();
+    client.aliases = new Discord.Collection();
+    client.snipes = new Map();
+    client.inter = new Array();
 
-    client.login(process.env.token);
-}
+    client.login('MTI4NzQ5NTE4MTUzNjMyOTc0OA.G_zLeo.af9OeGJu2YS_jgLYPu9kzsZQ2LH5V7DqAnDJKQ');
+};
 
+// Ajout de l'accolade fermante manquante
 module.exports = {
     login
-}
+};
+
