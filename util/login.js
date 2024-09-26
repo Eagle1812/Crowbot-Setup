@@ -19,7 +19,7 @@ const login = (client) => {
     client.snipes = new Map();
     client.inter = new Array();
 
-    client.login('MTI4NzQ5NTE4MTUzNjMyOTc0OA.G_zLeo.af9OeGJu2YS_jgLYPu9kzsZQ2LH5V7DqAnDJKQ');
+     client.login(process.env.token);
 };
 
 // Ajout de l'accolade fermante manquante
